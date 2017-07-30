@@ -13,11 +13,11 @@ class App extends Component {
         <div className="App-header">
           <NavBar />
         </div>
-        <div className="row">
+        <div className="row wholePage">
           <div className="col-lg playListForm">
             <PlayListForm />
           </div>
-          <div className="col-lg">
+          <div className="col-lg playListThings">
             <PlayList />
           </div>
         </div>

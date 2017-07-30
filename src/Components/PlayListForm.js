@@ -85,7 +85,7 @@ class PlayListForm extends Component {
          </label>
          <br />
          <label>
-           Artist/Band/Group:
+           Artist/Group:
            <input
              className="textArea"
              onChange={this.handleSongArtistChange}
@@ -109,7 +109,7 @@ class PlayListForm extends Component {
          </label>
          <br />
          <label>
-           Notes about the song:
+           Song Notes:
            <input
              className="songNotesText"
              onChange={this.handleSongNotesChange}
@@ -122,7 +122,7 @@ class PlayListForm extends Component {
          <br />
          <div className="submitButton">
            <input
-             type="submit" value="Submit"
+             type="submit" value="Submit" className="submitBtn"
            />
            </div>
        </form>
