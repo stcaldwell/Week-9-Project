@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 class PlayListForm extends Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.handleUserNameChange = this.handleUserNameChange.bind(this);
     this.handleSongArtistChange = this.handleSongArtistChange.bind(this);
@@ -11,10 +11,10 @@ class PlayListForm extends Component {
     this.addToList = this.addToList.bind(this);
 
     this.state = {
-      userName: '',
-      songArtist: '',
-      songTitle: '',
-      songNotes: ''
+      userName: "",
+      songArtist: "",
+      songTitle: "",
+      songNotes: ""
     };
   }
 
@@ -57,11 +57,12 @@ class PlayListForm extends Component {
       console.log(err, "boo!");
     });
     this.setState({
-      userName: '',
-      songNotes: '',
-      songArtist: '',
-      songTitle:''
+      userName: "",
+      songNotes: "",
+      songArtist: "",
+      songTitle:""
     });
+    console.log(this.userName);
   };
 
   render() {
@@ -70,7 +71,7 @@ class PlayListForm extends Component {
        <div className="formTitle">
          <h2>Tell us your favorite song!</h2>
        </div>
-       <form>
+       <form onSubmit={this.addToList}>
          <label>
            User Name:
            <input
