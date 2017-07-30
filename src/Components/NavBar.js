@@ -4,8 +4,9 @@ class NavBar extends Component {
   render() {
     return (
       <div className="row navBar">
-        <div className="col-sm logo">
-
+        <div className="col-sm appLogo">
+          <img className="reactLogo" src={require("../Images/react-icons.svg")}
+          />
         </div>
 
         <div className="col-sm navTitle">
